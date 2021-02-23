@@ -65,7 +65,7 @@ public class contactAdapter extends ArrayAdapter {
                 updateContact(contact);
             }
 
-            private void updateContact(final Contact contact1) {
+            private void updateContact(final Contact contact) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 LayoutInflater layoutInflater = LayoutInflater.from(context);
                 View view = layoutInflater.inflate(R.layout.update_func, null);
@@ -81,11 +81,11 @@ public class contactAdapter extends ArrayAdapter {
 
 
 
-                etName.setText(contact1.getFirst_name());
-                etlastName.setText(contact1.getLast_name());
-                etEmail.setText(contact1.getEmail());
-                etPhone.setText(contact1.getPhone_number());
-                etAddress.setText(contact1.getAddress());
+                etName.setText(contact.getFirst_name());
+                etlastName.setText(contact.getLast_name());
+                etEmail.setText(contact.getEmail());
+                etPhone.setText(contact.getPhone_number());
+                etAddress.setText(contact.getAddress());
 
 
                 view.findViewById(R.id.btn_update).setOnClickListener(new View.OnClickListener() {
