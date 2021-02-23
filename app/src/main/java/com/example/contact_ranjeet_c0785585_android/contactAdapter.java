@@ -88,7 +88,7 @@ public class contactAdapter extends ArrayAdapter {
                 etAddress.setText(contact1.getAddress());
 
 
-                view.findViewById(R.id.Addcontact).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.btn_update).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         String name = etName.getText().toString().trim();
